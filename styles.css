@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: rgb(207, 202, 202);
 }
 
 .container{
@@ -12,7 +13,6 @@ html, body {
 }
 /*---------------------------------------------*/
 .header {
-    background-color: aquamarine;
     border: 1px solid black;
  
     grid-column: 2 / 4;
@@ -49,32 +49,58 @@ html, body {
 }
 /*---------------------------------------------*/
 .content {
-    background-color: palevioletred;
     border: 1px solid black;
+    padding: 15px;
 
     grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    grid-row: 2 / 4;    
+}
+
+.content-grid {
+    height: 95%;
 
     display:grid;
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 15px;
 }
 
+.box,
+.announcements-grid,
+.trending-grid {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px gray;
+}
 /*---------------------------------------------*/
-.announcements {
-    background-color: plum;
+.announcements,
+.trending {
     border: 1px solid black;
 
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+
+    padding-top: 10px;
+
+    padding-bottom: 17px;
+}
+
+.announcements-grid,
+.trending-grid {
+    height: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 /*---------------------------------------------*/
 .trending {
-    background-color: mediumslateblue;
     border: 1px solid black;
 
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+}
+
+/*---------------------------------------------*/
+.section {
+    margin-bottom: 10px;
 }
