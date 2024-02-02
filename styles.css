@@ -135,10 +135,13 @@ header div{
     
 }
 
+
 header .hi-there {
     display: flex;
     flex-direction: column;
 }
+
+
 /*header end*/
 
 /*main starts*/
@@ -164,13 +167,17 @@ main .main-content {
     grid-template-rows: repeat(auto-fill, 1fr);
 }
 
-.box {
-    padding: 10px;
+.box,
+.announcements-grid,
+.trending-grid {
+    padding: 20px;
     background-color: var(--ternary-color);
     box-shadow: var(--shadow);
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .text {
@@ -185,3 +192,5 @@ main .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
+
+
