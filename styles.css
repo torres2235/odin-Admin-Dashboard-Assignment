@@ -129,19 +129,61 @@ header {
     gap: 15px;
 }
 
+header img {
+    width: 25px;
+}
+
+.user {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.big {
+    width: 100px;
+}
+
 header div{
     display: flex;
     justify-content: space-between;
     
 }
 
+header .header-top {
+    align-items: center;
+    margin: 20px 30px 0px 30px;
+}
+
+header .header-bottom {
+    align-items: center;
+    margin-left:30px;
+}
+
+header h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
 
 header .hi-there {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-
+.header-buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    gap: 15px;
+}
+button {
+    color: var(--ternary-color);
+    background-color: var(--secondary-color);
+    width: 6vw;
+    height: 30px;
+    border-style: none;
+    border-radius: 15px;
+}
 /*header end*/
 
 /*main starts*/
@@ -153,7 +195,7 @@ main {
     padding: 20px;
 
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
 }
@@ -172,7 +214,7 @@ main .main-content {
 }
 
 main h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -224,6 +266,12 @@ main .announcments {
 main .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.trending-grid div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .trending img {
